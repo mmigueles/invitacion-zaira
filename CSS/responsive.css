@@ -1,0 +1,251 @@
+/* =========================================
+   RESPONSIVE - TABLET
+========================================= */
+
+@media (max-width: 900px) {
+    section {
+        padding-left: 6%;
+        padding-right: 6%;
+    }
+}
+
+/* =========================================
+   RESPONSIVE - CELULARES
+========================================= */
+
+@media (max-width: 600px) {
+    .hero {
+        width: 100%;
+        min-height: 100vh;
+        min-height: 100svh;
+
+        padding: 100px 12px 35px;
+        justify-content: center;
+        overflow: hidden;
+    }
+
+
+    .hero-text {
+        width: 100%;
+        max-width: 100%;
+    }
+
+    /* ZAIRA */
+    .hero h1.nombre-zaira {
+        display: block;
+        width: 100%;
+        max-width: 100%;
+
+        font-family: 'Allura', cursive !important;
+        font-size: clamp(3.2rem, 15vw, 5.5rem) !important;
+        font-weight: 400;
+        line-height: 1;
+        letter-spacing: 0;
+
+        margin: 0;
+        padding: 0;
+        text-align: center;
+        overflow-wrap: anywhere;
+
+        position: relative;
+        left: auto;
+        right: auto;
+        transform: none;
+    }
+
+    /* XV */
+    .hero h2 {
+        display: block;
+        width: 100%;
+        max-width: 100%;
+
+        font-family: 'Allura', cursive !important;
+        font-size: clamp(2.2rem, 10vw, 3.5rem) !important;
+        font-weight: 400;
+        line-height: 1.1;
+        letter-spacing: 2px;
+
+        margin: 8px 0 22px;
+        padding: 0;
+        text-align: center;
+
+        position: relative;
+        left: auto;
+        right: auto;
+        transform: none;
+    }
+
+    .corazon {
+        margin-left: 5px;
+    }
+
+    .frase {
+        width: 100%;
+        max-width: 340px;
+        margin: 0 auto 25px;
+
+        font-size: 14px;
+        line-height: 1.6;
+        text-align: center;
+    }
+
+    .boton {
+        max-width: 100%;
+        padding: 14px 25px;
+        font-size: 14px;
+    }
+
+    .detalles {
+        min-height: auto;
+        padding: 45px 18px 15px;
+    }
+
+    .intro-contador {
+        padding: 60px 15px 15px;
+    }
+
+    .intro-contador h2 {
+        font-size: 28px;
+    }
+
+    .fecha-fiesta {
+        font-size: 13px;
+        letter-spacing: 3px;
+    }
+
+    .contador {
+        gap: 12px;
+    }
+
+    .box {
+        width: min(42vw, 145px);
+        height: 130px;
+    }
+
+    .box span {
+        font-size: 2.5rem;
+    }
+
+    .titulo-seccion {
+        font-size: 2rem;
+    }
+
+    .detalle-titulo {
+        padding: 18px 15px;
+        font-size: 15px;
+        letter-spacing: 1px;
+    }
+}
+
+/* =========================================
+   MOBILE S - 320px
+========================================= */
+
+@media (max-width: 340px) {
+
+    .hero h1.nombre-zaira {
+        font-family: 'Allura', cursive !important;
+        font-size: 2.5rem !important;
+        font-weight: 400;
+        letter-spacing: -1px;
+    }
+
+    .hero h2 {
+        font-family: 'Allura', cursive !important;
+        font-size: 1.65rem !important;
+        font-weight: 400;
+        letter-spacing: 2px;
+    }
+
+    .frase {
+        font-size: 13px;
+    }
+
+    .boton {
+        padding: 13px 18px;
+        font-size: 13px;
+    }
+}
+
+
+/* =========================================
+   COLORES BORDO Y DORADO
+========================================= */
+
+/* Contador */
+.box {
+    border-color: rgba(197, 161, 91, 0.22);
+    background: rgba(65, 0, 18, 0.22);
+}
+
+.box span {
+    color: var(--dorado);
+}
+
+.box:hover {
+    box-shadow: 0 0 22px rgba(128, 0, 32, 0.45);
+}
+
+/* Tarjetas del evento */
+.card {
+    border-color: rgba(197, 161, 91, 0.18);
+    background: rgba(255, 255, 255, 0.035);
+}
+
+.card i {
+    color: var(--dorado);
+}
+
+.card:hover {
+    box-shadow: 0 0 25px rgba(128, 0, 32, 0.4);
+}
+
+/* Fechas y títulos */
+.fecha-fiesta,
+.dato-titulo {
+    color: var(--dorado);
+}
+
+.intro-contador h2,
+.titulo-seccion,
+.detalles .titulo-seccion {
+    text-shadow: 0 0 15px rgba(128, 0, 32, 0.4);
+}
+
+/* Botones */
+.mapa a,
+.boton-confirmar {
+    background: linear-gradient(135deg, #800020, #4b0014);
+    border: 1px solid rgba(197, 161, 91, 0.4);
+}
+
+.boton-copiar {
+    border-color: rgba(197, 161, 91, 0.45);
+    background: rgba(128, 0, 32, 0.12);
+}
+
+.boton-copiar i,
+.detalle-titulo span i,
+.flecha {
+    color: var(--dorado);
+}
+
+/* Acordeón */
+.detalle-acordeon {
+    border-color: rgba(197, 161, 91, 0.18);
+    box-shadow: 0 0 18px rgba(128, 0, 32, 0.08);
+}
+
+.detalle-acordeon.abierto {
+    border-color: rgba(197, 161, 91, 0.35);
+}
+
+/* Datos bancarios */
+.datos-bancarios {
+    border-top-color: rgba(197, 161, 91, 0.2);
+}
+
+/* Barra de desplazamiento */
+::-webkit-scrollbar-thumb {
+    background: var(--bordo);
+}

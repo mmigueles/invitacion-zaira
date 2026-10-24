@@ -1,0 +1,236 @@
+
+/* =====================================
+   PORTADA
+===================================== */
+
+.hero {
+    width: 100%;
+    min-height: 100vh;
+    min-height: 100svh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+    padding: 120px 20px 50px;
+
+    position: relative;
+    isolation: isolate;
+    overflow: hidden;
+}
+
+/* =====================================
+   FOTO DE FONDO
+===================================== */
+
+.hero-img {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -2;
+    overflow: hidden;
+    pointer-events: none;
+}
+
+.hero-img img {
+    display: block;
+    width: 100%;
+    height: 100%;
+
+    /* La foto llena la portada */
+    object-fit: cover;
+    object-position: center 25%;
+
+    border: 0;
+    border-radius: 0;
+    box-shadow: none;
+
+    opacity: 0.95;
+    transform: none;
+    animation: none;
+}
+
+/* =====================================
+   OSCURECIDO DE LA FOTO
+===================================== */
+
+.hero-img::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    z-index: 1;
+
+    background: radial-gradient(
+        circle at center,
+        transparent 25%,
+        rgba(8, 0, 4, 0.4) 100%
+    );
+}
+
+.hero-img::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    z-index: 2;
+
+    background: linear-gradient(
+        to bottom,
+        rgba(8, 0, 4, 0.15) 0%,
+        rgba(30, 0, 12, 0.25) 40%,
+        rgba(8, 0, 4, 0.88) 100%
+    );
+}
+
+/* =====================================
+   TEXTO DE PORTADA
+===================================== */
+
+.hero-text {
+    width: 100%;
+    max-width: 100%;
+    position: relative;
+    z-index: 3;
+    animation: aparecerIzquierda 1.2s ease both;
+}
+
+.subtitulo {
+    color: var(--dorado);
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+/* =====================================
+   ZAIRA + XV
+===================================== */
+
+.hero h1,
+.hero h2,
+.hero .corazon {
+    color: #f1e5d0;
+
+    text-shadow:
+        0 0 8px rgba(255, 255, 255, 0.65),
+        0 0 20px rgba(128, 0, 32, 0.75),
+        0 0 36px rgba(197, 161, 91, 0.18);
+
+    animation: brilloTitulo 4s ease-in-out infinite;
+}
+
+/* Nombre */
+
+.hero h1.nombre-zaira{
+    font-family: 'Allura', cursive;
+    font-size: 15rem;
+    font-weight: 400;
+    line-height: 1;
+    letter-spacing: 2px;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    max-width: 100%;
+    overflow-wrap: anywhere;
+}
+
+/* XV */
+
+.hero h2 {
+    font-family: 'Allura', cursive;
+    font-weight: 400;
+    font-size: 8rem;
+    line-height: 1.1;
+    letter-spacing: 2px;
+    margin: 8px 0 30px;
+}
+
+/* Corazón, si lo utilizás */
+
+.corazon {
+    display: inline-block;
+    font-family: Arial, sans-serif;
+    font-size: 0.42em;
+    margin-left: 12px;
+    vertical-align: middle;
+}
+
+/* =====================================
+   BRILLO DEL TÍTULO
+===================================== */
+
+@keyframes brilloTitulo {
+    0%, 100% {
+        text-shadow:
+            0 0 8px rgba(255, 255, 255, 0.6),
+            0 0 18px rgba(128, 0, 32, 0.65),
+            0 0 30px rgba(197, 161, 91, 0.12);
+    }
+
+    50% {
+        text-shadow:
+            0 0 12px rgba(255, 255, 255, 0.9),
+            0 0 28px rgba(128, 0, 32, 0.9),
+            0 0 38px rgba(197, 161, 91, 0.28);
+    }
+}
+
+/* =====================================
+   FRASE
+===================================== */
+
+.frase {
+    width: 100%;
+    max-width: 600px;
+    line-height: 1.8;
+    color: #eee4e5;
+    margin: 0 auto 35px;
+}
+
+/* =====================================
+   BOTÓN
+===================================== */
+
+.boton {
+    display: inline-block;
+    padding: 16px 38px;
+
+    background: linear-gradient(
+        135deg,
+        #800020,
+        #4b0014
+    );
+
+    color: #fff;
+    border: 1px solid rgba(197, 161, 91, 0.55);
+    border-radius: 50px;
+
+    text-decoration: none;
+    font-weight: 600;
+    letter-spacing: 1px;
+
+    transition: 0.3s;
+
+    box-shadow:
+        0 0 18px rgba(128, 0, 32, 0.5);
+}
+
+.boton:hover {
+    transform: translateY(-3px);
+
+    box-shadow:
+        0 0 24px rgba(128, 0, 32, 0.7);
+}
+
+/* Mantener Allura en Zaira y XV en todos los dispositivos */
+
+.hero h1.nombre-zaira {
+    font-family: 'Allura', cursive !important;
+    font-weight: 400;
+}
+.hero h2 {
+    font-family: 'Allura', cursive !important;
+    font-weight: 400;
+}
+
