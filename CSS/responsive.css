@@ -37,7 +37,7 @@
         max-width: 100%;
 
         font-family: 'Allura', cursive !important;
-        font-size: clamp(3.2rem, 15vw, 5.5rem) !important;
+        font-size: clamp(3.2rem, 21vw, 5.5rem) !important;
         font-weight: 400;
         line-height: 1;
         letter-spacing: 0;
@@ -59,8 +59,8 @@
         width: 100%;
         max-width: 100%;
 
-        font-family: 'Allura', cursive !important;
-        font-size: clamp(2.2rem, 10vw, 3.5rem) !important;
+        font-family: Georgia, 'Times New Roman', Times, serif !important;
+        font-size: clamp(2.2rem, 12vw, 3.5rem) !important;
         font-weight: 400;
         line-height: 1.1;
         letter-spacing: 2px;
